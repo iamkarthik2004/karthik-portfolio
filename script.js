@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // TYPING TEXT EFFECT
     const typing = document.getElementById('typing');
-    const roles = ["CSE Student", "Web Developer", "UI/UX Designer", "Designer", "Tech Enthusiast"];
+    const roles = ["CSE Student", "Web Developer", "UI/UX Designer", "Graphic Designer", "Tech Enthusiast"];
     
     let roleIndex = 0;
     let charIndex = 0;
