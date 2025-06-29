@@ -14,7 +14,7 @@
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%; 
 }
 
 body {
@@ -25,9 +25,7 @@ body {
     color: white;
 }
 
-/*------------------------------------
-HEADER & NAV BAR
-------------------------------------*/
+/*---HEADER & NAV BAR------*/
 header {
     position: fixed;
     top: 0;
@@ -82,7 +80,6 @@ nav a.active {
 }
 
 /* Responsive Navbar */
-/* Responsive Navbar */
 @media (max-width: 995px) {
   .menu-icon {
     display: block;
@@ -114,17 +111,13 @@ nav a.active {
 
 
 
-/*------------------------------------
-SECTION WISE STYLING
-------------------------------------*/
+/*----SECTION WISE STYLING-------*/
 section {
     min-height: 900px;
     padding: 5rem 9% 5rem;
 }
 
-/*------------------------------------
-HOME SECTION
-------------------------------------*/
+/*-------HOME SECTION--------*/
 .home {
     display: flex;
     justify-content: center;
@@ -157,9 +150,7 @@ span {
     border-radius: 50%;
 }
 
-/*------------------------------------
-HOME IMAGE STYLING
-------------------------------------*/
+/*-----HOME IMAGE STYLING---------*/
 .home-img img {
     position: relative;
     width: 25vw;
@@ -176,9 +167,7 @@ HOME IMAGE STYLING
     filter: drop-shadow(0 0 2em #0caec3);
 }
 
-/*------------------------------------
-SOCIAL MEDIA ICONS
-------------------------------------*/
+/*----------SOCIAL MEDIA ICONS-------*/
 .social-icons a {
     display: inline-flex;
     justify-content: center;
@@ -214,9 +203,7 @@ SOCIAL MEDIA ICONS
   cursor: pointer;
 }
 
-/*------------------------------------
-DOWNLOAD BUTTON
-------------------------------------*/
+/*-----CV DOWNLOAD BUTTON------*/
 .btn2 {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -238,9 +225,7 @@ DOWNLOAD BUTTON
     box-shadow: 0 0 25px #0caec3;
 }
 
-/*------------------------------------
-ABOUT SECTION
-------------------------------------*/
+/*-------ABOUT SECTION-------*/
 .about p {
     font-size: 1.6rem;
 }
@@ -254,13 +239,7 @@ ABOUT SECTION
     margin-top: 20px; 
 }
 
-
-
-
-
-/*------------------------------------
-SKILLS SECTION
-------------------------------------*/
+/*-------SKILLS SECTION-----*/
 .section-title {
   font-size: 35px;    
   color: #bac30c;
@@ -318,9 +297,7 @@ SKILLS SECTION
   margin-left: 0.5rem;
 }
 
-/*------------------------------------
-PROJECTS SECTION
-------------------------------------*/
+/*-------PROJECTS SECTION---------*/
 .project {
     background-color: #0a0a0a;
     text-align: center;
