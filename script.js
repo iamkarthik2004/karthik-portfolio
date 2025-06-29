@@ -1,3 +1,4 @@
+// MENU TOGGLE FUNCTIONALITY
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.menu-icon');
     const nav = document.querySelector('nav');
@@ -6,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('active');
     });
 
+    // TYPING TEXT ANIMATION
     const typingElement = document.getElementById('typing');
     const words = ["CSE Student", "Web Developer", "UI/UX Designer", "Designer", "Tech Enthusiast"];
     let wordIndex = 0;
