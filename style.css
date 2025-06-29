@@ -55,6 +55,7 @@ header {
     transition: 0.5s ease;
 }
 
+
 .logo:hover {
     transform: scale(1.1);
 }
@@ -255,7 +256,7 @@ ABOUT SECTION
 
 .about h2 {
     font-size: 30px;
-    color: #0caec3;
+    color: #bac30c;
 }
 
 .about .mydetails {
@@ -269,6 +270,11 @@ ABOUT SECTION
 /*------------------------------------
 SKILLS SECTION
 ------------------------------------*/
+.section-title {
+  font-size: 35px;    
+  color: #bac30c;
+}
+
 .skills {
   background-color: #0a0a0a;
   text-align: center;
