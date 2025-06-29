@@ -1,53 +1,45 @@
-// MENU TOGGLE FUNCTIONALITY
+// MENU TOGGLE
 document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.querySelector('.menu-icon'); // renamed from 'hamburger'
-    const nav = document.querySelector('nav');
+    const menuBtn = document.querySelector('.menu-icon');
+    const navBar = document.querySelector('nav');
 
-    menuButton.addEventListener('click', () => {
-        nav.classList.toggle('active');
+    menuBtn.addEventListener('click', () => {
+        navBar.classList.toggle('active');
     });
 
-    // TYPING TEXT ANIMATION
-    const typingElement = document.getElementById('typing');
-    const words = ["CSE Student", "Web Developer", "UI/UX Designer", "Designer", "Tech Enthusiast"];
-    let wordIndex = 0;
-    let letterIndex = 0;
-    let currentWord = '';
-    let currentLetters = '';
+    // TYPING TEXT EFFECT
+    const typing = document.getElementById('typing');
+    const roles = ["CSE Student", "Web Developer", "UI/UX Designer", "Designer", "Tech Enthusiast"];
+    
+    let roleIndex = 0;
+    let charIndex = 0;
+    let currentText = '';
     let isDeleting = false;
 
-    function type() {
+    function typeEffect() {
+        currentText = roles[roleIndex];
+        
         if (isDeleting) {
-            currentLetters = currentWord.substring(0, letterIndex - 1);
-            letterIndex--;
+            charIndex--;
         } else {
-            currentLetters = currentWord.substring(0, letterIndex + 1);
-            letterIndex++;
+            charIndex++;
         }
 
-        typingElement.innerHTML = currentLetters;
+        typing.innerHTML = currentText.substring(0, charIndex);
 
-        let typeSpeed = 200;
-        if (isDeleting) {
-            typeSpeed /= 2;
-        }
+        let speed = isDeleting ? 100 : 200;
 
-        if (!isDeleting && letterIndex === currentWord.length) {
-            typeSpeed = 2000;
+        if (!isDeleting && charIndex === currentText.length) {
+            speed = 2000;
             isDeleting = true;
-        } else if (isDeleting && letterIndex === 0) {
+        } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
-            wordIndex++;
-            if (wordIndex === words.length) {
-                wordIndex = 0;
-            }
-            currentWord = words[wordIndex];
-            typeSpeed = 500;
+            roleIndex = (roleIndex + 1) % roles.length;
+            speed = 500;
         }
 
-        setTimeout(type, typeSpeed);
+        setTimeout(typeEffect, speed);
     }
 
-    currentWord = words[wordIndex];
-    type();
+    typeEffect();
 });
