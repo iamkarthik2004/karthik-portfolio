@@ -1,15 +1,15 @@
 // MENU TOGGLE FUNCTIONALITY
 document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.menu-icon');
+    const menuButton = document.querySelector('.menu-icon'); // renamed from 'hamburger'
     const nav = document.querySelector('nav');
 
-    hamburger.addEventListener('click', () => {
+    menuButton.addEventListener('click', () => {
         nav.classList.toggle('active');
     });
 
     // TYPING TEXT ANIMATION
     const typingElement = document.getElementById('typing');
-    const words = ["CSE Student", "Web Developer", "UI/UX Designer", "Graphic Designer", "Tech Enthusiast"];
+    const words = ["CSE Student", "Web Developer", "UI/UX Designer", "Designer", "Tech Enthusiast"];
     let wordIndex = 0;
     let letterIndex = 0;
     let currentWord = '';
