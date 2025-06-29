@@ -5,7 +5,7 @@ IMPORT FONTS
 
 
 /*------------------------------------
-GLOBAL RESET
+GLOBAL STYLING
 ------------------------------------*/
 * {
     margin: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 /*------------------------------------
-HEADER & NAVIGATION BAR
+HEADER & NAV BAR
 ------------------------------------*/
 header {
     position: fixed;
@@ -124,10 +124,10 @@ nav a.active {
 }
 
 /*------------------------------------
-SECTION BASE STYLING
+SECTION WISE STYLING
 ------------------------------------*/
 section {
-    min-height: 100vh;
+    min-height: 900px;
     padding: 5rem 9% 5rem;
 }
 
@@ -406,11 +406,7 @@ PROJECTS SECTION
 }
 
 
-
-
-/*------------------------------------
-RESPONSIVE - HOME SECTION
-------------------------------------*/
+/*-------RESPONSIVE - HOME SECTION-----------*/
 @media (max-width: 1000px) {
     .home {
         gap: 4rem;
@@ -432,24 +428,12 @@ RESPONSIVE - HOME SECTION
     }
 
     .home-img img {
-        width: 70vw;
+        width: 90px;
         margin-top: 4rem;
     }
 }
 
-/*------------------------------------
-ANIMATIONS & EFFECTS
-------------------------------------*/
-@media (prefers-reduced-motion: no-preference) {
-    .home-img img.spin {
-        animation: logo-spin infinite 20s linear;
-    }
-}
-
-
-/*------------------------------------
-CONTACT FORM
-------------------------------------*/
+/*-------CONTACT FORM--------*/
 form {
     max-width: 500px;
     margin: 40px auto;
