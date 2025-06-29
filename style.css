@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 
-/*------------------------------------
-GLOBAL STYLING
-------------------------------------*/
+/*---------GLOBAL STYLING---------------*/
 * {
     margin: 0;
     padding: 0;
@@ -84,42 +82,37 @@ nav a.active {
 }
 
 /* Responsive Navbar */
-@media(max-width: 995px) {
-    .menu-icon {
-        display: block;
-    }
+/* Responsive Navbar */
+@media (max-width: 995px) {
+  .menu-icon {
+    display: block;
+    font-size: 20px;
+    color: white;
+  }
 
-    nav {
-        position: absolute;
-        display: none;
-        top: 5rem;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid #0caec3;
-        border-bottom: 3px solid #0caec3;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem;
-        background-color: #161616;
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-    }
+  nav {
+    display: none;
+    background: #111;
+    padding: 10px;
+  }
 
-    nav.active {
-        display: block;
-    }
+  nav.active {
+    display: block;
+  }
 
-    nav a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
+  nav a {
+    display: block;
+    color: white;
+    margin: 10px 0;
+    font-size: 18px;
+  }
 
-    nav a:hover,
-    nav a.active {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #0caec3;
-    }
+  nav a:hover {
+    color: cyan;
+  }
 }
+
+
 
 /*------------------------------------
 SECTION WISE STYLING
