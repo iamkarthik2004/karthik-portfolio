@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // TYPING TEXT ANIMATION
     const typingElement = document.getElementById('typing');
-    const words = ["CSE Student", "Web Developer", "UI/UX Designer", "Designer", "Tech Enthusiast"];
+    const words = ["CSE Student", "Web Developer", "UI/UX Designer", "Graphic Designer", "Tech Enthusiast"];
     let wordIndex = 0;
     let letterIndex = 0;
     let currentWord = '';
