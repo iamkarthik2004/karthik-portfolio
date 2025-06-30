@@ -40,3 +40,5 @@ Built using **HTML**, **CSS**, and **JavaScript** ✨
 1. Clone this repo  
    ```bash
    git clone https://github.com/iamkarthik2004/your-repo-name.git
+
+<img src="https://komarev.com/ghpvc/?/iamkarthik2004=repo-visits&color=blueviolet&style=flat-square&label=Repository+Views">
