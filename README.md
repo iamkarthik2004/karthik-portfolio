@@ -8,7 +8,7 @@ Built using **HTML**, **CSS**, and **JavaScript** ✨
 
 ## 🌐 Live Website
 
-🔗 [Visit my portfolio website](https://karthikkk-portfolyo.vercel.app)  
+🔗 [Visit my portfolio website](https://karthikkk-portfolio.vercel.app/)  
 
 ---
 
