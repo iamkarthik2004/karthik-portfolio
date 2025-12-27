@@ -308,7 +308,7 @@ span {
   margin-top: 4rem;
 }
 
-/* center line */
+/* center vertical line */
 .exp-timeline::before {
   content: "";
   position: absolute;
@@ -320,7 +320,7 @@ span {
   transform: translateX(-50%);
 }
 
-/* items */
+/* timeline items */
 .exp-item {
   position: relative;
   width: 50%;
@@ -337,7 +337,7 @@ span {
   text-align: left;
 }
 
-/* dots */
+/* timeline dots */
 .exp-item::before {
   content: "";
   position: absolute;
@@ -357,7 +357,7 @@ span {
   left: -9px;
 }
 
-/* content card */
+/* experience card */
 .exp-content {
   background: #111;
   border: 2px solid #0caec3;
@@ -370,8 +370,8 @@ span {
 .exp-date {
   font-size: 1.2rem;
   color: #0caec3;
-  display: inline-block;
   margin-bottom: 0.5rem;
+  display: inline-block;
 }
 
 .exp-content h3 {
@@ -407,7 +407,7 @@ span {
   border-radius: 20px;
 }
 
-/* mobile */
+/* mobile responsive */
 @media (max-width: 900px) {
   .exp-timeline::before {
     left: 10px;
@@ -416,7 +416,6 @@ span {
   .exp-item {
     width: 100%;
     padding-left: 40px;
-    padding-right: 0;
   }
 
   .exp-item.left,
@@ -429,6 +428,7 @@ span {
     left: 1px;
   }
 }
+
 
 
 /*-------PROJECTS SECTION---------*/
@@ -595,4 +595,5 @@ button:hover {
   color: #aaa;
   font-size: 14px;
 }
+
 
