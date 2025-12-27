@@ -297,6 +297,140 @@ span {
   margin-left: 0.5rem;
 }
 
+/* ===== EXPERIENCE TIMELINE ===== */
+.experience {
+  background: #0a0a0a;
+  padding: 5rem 9%;
+}
+
+.exp-timeline {
+  position: relative;
+  margin-top: 4rem;
+}
+
+/* center line */
+.exp-timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #0caec3;
+  transform: translateX(-50%);
+}
+
+/* items */
+.exp-item {
+  position: relative;
+  width: 50%;
+  padding: 2rem;
+}
+
+.exp-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.exp-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* dots */
+.exp-item::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 18px;
+  height: 18px;
+  background: #0caec3;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #0caec3;
+}
+
+.exp-item.left::before {
+  right: -9px;
+}
+
+.exp-item.right::before {
+  left: -9px;
+}
+
+/* content card */
+.exp-content {
+  background: #111;
+  border: 2px solid #0caec3;
+  border-radius: 14px;
+  padding: 1.8rem;
+  max-width: 360px;
+  display: inline-block;
+}
+
+.exp-date {
+  font-size: 1.2rem;
+  color: #0caec3;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.exp-content h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.exp-content h4 {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.exp-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.exp-content li {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+/* tags */
+.tags span {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 0.6rem;
+  padding: 0.3rem 0.9rem;
+  font-size: 1.2rem;
+  background: #0caec3;
+  color: black;
+  border-radius: 20px;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .exp-timeline::before {
+    left: 10px;
+  }
+
+  .exp-item {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 0;
+  }
+
+  .exp-item.left,
+  .exp-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .exp-item::before {
+    left: 1px;
+  }
+}
+
+
 /*-------PROJECTS SECTION---------*/
 .project {
     background-color: #0a0a0a;
@@ -461,3 +595,4 @@ button:hover {
   color: #aaa;
   font-size: 14px;
 }
+
