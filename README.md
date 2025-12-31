@@ -12,6 +12,7 @@ Built using **HTML**, **CSS**, and **JavaScript** ✨
 
 ---
 
+
 ## 📌 Features
 
 - 🏠 **Home Page** with intro, profile image, and typing animation  
